@@ -8,9 +8,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "bootstrap": "^5.3.3"
-  },
+  "dependencies": {},
   "devDependencies": {},
   "description": ""
 }
