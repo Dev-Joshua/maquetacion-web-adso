@@ -9,36 +9,37 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <title>WoofWorkout</title>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+    <nav class="navbar navbar-expand-lg ">
+      <a class="navbar-logo" href="#"><img src="./assets/images/logoWW2.png" alt="logo-icon"></a>
+     <div class="container-sections">
+      <div class="nav-list">
+        
+        <div class="container-search">
+          <form class="d-flex" role="search">
+            <button type="submit"><img class="icon-search " src="./assets/icons/search.svg" alt="icon-search-image"></button>
+            <input class="me-2" type="search" placeholder="Buscar match" aria-label="Search">
+          </form>
+        </div>
+        
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="#">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Nosotros</a>
             </li>
             <li class="nav-item dropdown">
               <a
-                class="nav-link dropdown-toggle"
+                class="nav-link dropdown-toggle disabled"
                 href="#"
                 role="button"
                 data-bs-toggle="dropdown"
@@ -55,27 +56,17 @@
                 </li>
               </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success" type="submit">
-              Search
-            </button>
-          </form>
-        </div>
+        </ul>
       </div>
+      <div>
+        <button class="btn btn-light">Registrarse</button>
+        <button class="btn btn-dark">Iniciar sesión</button>
+      </div>
+     </div>
     </nav>
     <main>
       <!-- carousel -->
-      <section>
+      <section class="carousel-section">
         <div id="carouselExampleIndicators" class="carousel slide">
           <div class="carousel-indicators">
             <button
@@ -101,57 +92,23 @@
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <div class="card text-center">
-                <div class="card-body">
-                  <h1 class="card-title">Conecta con cuidadores, paseadores y entrenadores dedicados a las mascotas</h1>
-                  <p class="card-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat sit perferendis officia laudantium excepturi ipsam sapiente, neque quas nam.
-                  </p>
-                 <button class="btn btn-primary"><a href="#" >Registrate</a></button>
-                 <button class="btn btn-primary"><a href="#">Mas información</a></button>
-                </div>
-              </div>
               <img
                 src="./assets/images/image1.jpg"
-                class="d-block w-100 opacity-25"
                 alt="dog-image"
               />
             </div>
-            <div class="carousel-item">
-              <div class="card text-center">
-                <div class="card-header">Featured</div>
-                <div class="card-body">
-                  <h5 class="card-title">Special title treatment</h5>
-                  <p class="card-text">
-                    With supporting text below as a natural lead-in to
-                    additional content.
-                  </p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
+            <div class="carousel-item active">
               <img
                 src="./assets/images/image2.jpg"
-                class="d-block w-100"
                 alt="dog-image"
               />
             </div>
-            <div class="carousel-item">
-              <div class="card text-center">
-                <div class="card-header">Featured</div>
-                <div class="card-body">
-                  <h5 class="card-title">Special title treatment</h5>
-                  <p class="card-text">
-                    With supporting text below as a natural lead-in to
-                    additional content.
-                  </p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
+            <div class="carousel-item active">
               <img
                 src="./assets/images/image3.jpg"
-                class="d-block w-100"
                 alt="dog-image"
               />
             </div>
-          </div>
           <button
             class="carousel-control-prev"
             type="button"
@@ -171,15 +128,26 @@
             <span class="visually-hidden">Next</span>
           </button>
         </div>
+        
+        <div class="card-body">
+            <h1 class="card-title">Conecta con cuidadores, paseadores y entrenadores dedicados a las mascotas</h1>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat sit perferendis officia laudantium excepturi ipsam sapiente, neque quas nam.
+            </p>
+           <div>
+            <button class="btn btn-dark"><a href="#" >Registrate</a></button>
+            <button class="btn btn-info"><a href="#">Mas información</a></button>
+           </div>
+        </div>
       </section>
 
       <!-- information -->
-      <section>
-        <div class="information-container">
+      <section class="section-info">
+        <div class="info-container">
           <h2>Encuentra cuidadores o paseadores locales, confiables y seguros</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque eius aut perspiciatis exercitationem doloremque. Earum unde iure quibusdam commodi, quasi ut ea eveniet impedit iusto explicabo repudiandae eaque aut. Molestias!</p>
 
-          <div class="column-container">
+          <div class="columns-container">
             <div>
               <h2>100%</h2>
               <p>Seguridad garantizada para tu perro</p>
@@ -190,41 +158,43 @@
             </div>
           </div>
 
-          <button>Mas información</button>
+          <button>Conocelos</button>
         </div>
-        <div class="image-container"></div>
+        <div class="image-container">
+          <img src="./assets/images/image4.jpg" alt="">
+        </div>
       </section>
       
       <!-- services -->
-      <section>
-        <div class="information-container" >
-          <h2>Descubre los servicios que ofrecemos para tus mascotas</h2>
-          <article class="card"  style="width: 18rem;">
-            <img src="" alt="">
-            <div class="card-boody">
+      <section class="services-section">
+        <h2>Descubre los servicios que ofrecemos para tus mascotas</h2>
+        <div class="container-cards" >
+          <article >
+            <div>
+              <img src="./assets/icons/person-walking-solid.svg" alt="">
               <h4>Caminata</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
               <a href="">Saber mas</a>
             </div>
           </article>
-          <article class="card" style="width: 18rem;">
-            <img src="" alt="">
-            <div class="card-body">
+          <article >
+            <div >
+              <img src="./assets/icons/house-solid.svg" alt="">
               <h4>Guardería</h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, consectetu provident expedita eum omnis aut molestias.</p>
               <a href="">Saber mas</a>
             </div>
           </article>
-          <article class="card" style="width: 18rem;">
-            <img src="" alt="">
-            <div class="card-body">
+          <article >
+            <div>
+              <img src="./assets/icons/dog-solid.svg" alt="">
               <h4>Entrenamiento canino</h4>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem fuga tenetur facilis quis ut commodi adipisci consectetur, soluta omnis eius iure magni iusto qui explicabo, quisquam labore ipsam beatae assumenda.</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem fuga tenetur facilis quis ut commodi adipisci consectetur.</p>
               <a href="">Saber mas</a>
             </div>
           </article>
         </div>
-        <div class="image-container"></div>
+        
       </section>
     </main>
     <footer>
