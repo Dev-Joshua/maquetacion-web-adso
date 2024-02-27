@@ -9,25 +9,41 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.css">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>WoofWorkout</title>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg ">
-      <a class="navbar-logo" href="#"><img src="./assets/images/logoWW2.png" alt="logo-icon"></a>
-     <div class="container-sections">
-      <div class="nav-list">
-        
-        <div class="container-search">
-          <form class="d-flex" role="search">
-            <button type="submit"><img class="icon-search " src="./assets/icons/search.svg" alt="icon-search-image"></button>
-            <input class="me-2" type="search" placeholder="Buscar match" aria-label="Search">
-          </form>
-        </div>
-        
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+    <nav class="navbar navbar-expand-lg">
+      <a class="navbar-logo" href="#"
+        ><img src="./assets/images/logoWW2.png" alt="logo-icon"
+      /></a>
+      <div class="container-sections">
+        <div class="nav-list">
+          <div class="container-search">
+            <form class="d-flex" role="search">
+              <button type="submit">
+                <img
+                  class="icon-search"
+                  src="./assets/icons/search.svg"
+                  alt="icon-search-image"
+                />
+              </button>
+              <input
+                class="me-2"
+                type="search"
+                placeholder="Buscar match"
+                aria-label="Search"
+              />
+            </form>
+          </div>
+
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
@@ -56,63 +72,45 @@
                 </li>
               </ul>
             </li>
-        </ul>
+          </ul>
+        </div>
+        <div>
+          <button class="btn btn-light">Registrarse</button>
+          <button class="btn btn-dark">Iniciar sesión</button>
+        </div>
       </div>
-      <div>
-        <button class="btn btn-light">Registrarse</button>
-        <button class="btn btn-dark">Iniciar sesión</button>
-      </div>
-     </div>
     </nav>
     <main>
       <!-- carousel -->
       <section class="carousel-section">
-        <div id="carouselExampleIndicators" class="carousel slide">
-          <div class="carousel-indicators">
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="0"
-              class="active"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="1"
-              aria-label="Slide 2"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="2"
-              aria-label="Slide 3"
-            ></button>
-          </div>
+        <div id="carouselExample" class="carousel slide">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img
                 src="./assets/images/image1.jpg"
-                alt="dog-image"
+                class="d-block w-100"
+                alt="image"
               />
             </div>
-            <div class="carousel-item active">
+            <div class="carousel-item">
               <img
                 src="./assets/images/image2.jpg"
-                alt="dog-image"
+                class="d-block w-100"
+                alt="image"
               />
             </div>
-            <div class="carousel-item active">
+            <div class="carousel-item">
               <img
                 src="./assets/images/image3.jpg"
-                alt="dog-image"
+                class="d-block w-100"
+                alt="image"
               />
             </div>
+          </div>
           <button
             class="carousel-control-prev"
             type="button"
-            data-bs-target="#carouselExampleIndicators"
+            data-bs-target="#carouselExample"
             data-bs-slide="prev"
           >
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -121,31 +119,44 @@
           <button
             class="carousel-control-next"
             type="button"
-            data-bs-target="#carouselExampleIndicators"
+            data-bs-target="#carouselExample"
             data-bs-slide="next"
           >
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
         </div>
-        
         <div class="card-body">
-            <h1 class="card-title">Conecta con cuidadores, paseadores y entrenadores dedicados a las mascotas</h1>
-            <p class="card-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat sit perferendis officia laudantium excepturi ipsam sapiente, neque quas nam.
-            </p>
-           <div>
-            <button class="btn btn-dark"><a href="#" >Registrate</a></button>
-            <button class="btn btn-info"><a href="#">Mas información</a></button>
-           </div>
+          <h1 class="card-title">
+            Conecta con cuidadores, paseadores y entrenadores dedicados a las
+            mascotas
+          </h1>
+          <p class="card-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat sit
+            perferendis officia laudantium excepturi ipsam sapiente, neque quas
+            nam.
+          </p>
+          <div>
+            <button class="btn btn-dark"><a href="#">Registrate</a></button>
+            <button class="btn btn-info">
+              <a href="#">Mas información</a>
+            </button>
+          </div>
         </div>
       </section>
 
       <!-- information -->
       <section class="section-info">
         <div class="info-container">
-          <h2>Encuentra cuidadores o paseadores locales, confiables y seguros</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque eius aut perspiciatis exercitationem doloremque. Earum unde iure quibusdam commodi, quasi ut ea eveniet impedit iusto explicabo repudiandae eaque aut. Molestias!</p>
+          <h2>
+            Encuentra cuidadores o paseadores locales, confiables y seguros
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque eius
+            aut perspiciatis exercitationem doloremque. Earum unde iure
+            quibusdam commodi, quasi ut ea eveniet impedit iusto explicabo
+            repudiandae eaque aut. Molestias!
+          </p>
 
           <div class="columns-container">
             <div>
@@ -161,40 +172,49 @@
           <button>Conocelos</button>
         </div>
         <div class="image-container">
-          <img src="./assets/images/image4.jpg" alt="">
+          <img src="./assets/images/image4.jpg" alt="" />
         </div>
       </section>
-      
+
       <!-- services -->
       <section class="services-section">
         <h2>Descubre los servicios que ofrecemos para tus mascotas</h2>
-        <div class="container-cards" >
-          <article >
+        <div class="container-cards">
+          <article>
             <div>
-              <img src="./assets/icons/person-walking-solid.svg" alt="">
+              <img src="./assets/icons/person-walking-solid.svg" alt="" />
               <h4>Caminata</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem
+                ipsum dolor sit amet, consectetur adipisicing elit.
+              </p>
               <a href="">Saber mas</a>
             </div>
           </article>
-          <article >
-            <div >
-              <img src="./assets/icons/house-solid.svg" alt="">
-              <h4>Guardería</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, consectetu provident expedita eum omnis aut molestias.</p>
-              <a href="">Saber mas</a>
-            </div>
-          </article>
-          <article >
+          <article>
             <div>
-              <img src="./assets/icons/dog-solid.svg" alt="">
+              <img src="./assets/icons/house-solid.svg" alt="" />
+              <h4>Guardería</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Ducimus, consectetu provident expedita eum omnis aut molestias.
+              </p>
+              <a href="">Saber mas</a>
+            </div>
+          </article>
+          <article>
+            <div>
+              <img src="./assets/icons/dog-solid.svg" alt="" />
               <h4>Entrenamiento canino</h4>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem fuga tenetur facilis quis ut commodi adipisci consectetur.</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatem fuga tenetur facilis quis ut commodi adipisci
+                consectetur.
+              </p>
               <a href="">Saber mas</a>
             </div>
           </article>
         </div>
-        
       </section>
     </main>
     <footer>
@@ -234,16 +254,30 @@
       </section>
       <section class="form-footer">
         <form>
-          <h2>Contacto</h2>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-          <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          <h4>Contacto</h4>
+          <div class="mb-2">
+            <label for="exampleInputEmail1" class="form-label"
+              >Email address</label
+            >
+            <input
+              type="email"
+              class="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+            />
+            <div id="emailHelp" class="form-text">
+              We'll never share your email with anyone else.
+            </div>
           </div>
-          <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          <div class="mb-2">
+            <label for="exampleFormControlTextarea1" class="form-label"
+              >Example textarea</label
+            >
+            <textarea
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              rows="2"
+            ></textarea>
           </div>
           <button type="submit" class="btn btn-primary">Enviar</button>
         </form>

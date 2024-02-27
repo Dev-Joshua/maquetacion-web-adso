@@ -42,6 +42,11 @@
 }
 
 /* Body */
+/* 
+.carousel .punto.active {
+  background-color: #83f7248d;
+}  */
+
 .carousel-section {
   margin-top: 20px;
   height: 90vh;
@@ -70,11 +75,11 @@
 .card-body {
   gap: 20px;
   position: relative;
-  bottom: 25em;
+  bottom: 28em;
   background: transparent;
-  width: 70%;
   text-align: center;
-  justify-content: center;
+  display: grid;
+  justify-items: center;
 }
 .card-body div {
   display: flex;
@@ -91,6 +96,12 @@
 .card-body .btn-info {
   border: solid 1px #fff;
   background-color: transparent;
+}
+.card-title {
+  width: 70%;
+}
+.card-text {
+  width: 80%;
 }
 .card a {
   color: #5d5d5d;
@@ -158,6 +169,11 @@
 .container-cards p {
   font-size: 14px;
 }
+.container-cards a {
+  color: #5d5d5d;
+  text-decoration: none;
+  font-weight: 400;
+}
 .container-cards article {
   display: flex;
   flex-direction: column;
@@ -178,4 +194,25 @@
   display: grid;
   align-items: center;
   justify-items: center;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.columns-footer {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+}
+.nav-item a {
+  color: #5d5d5d;
+}
+.form-footer {
+  width: 50%;
+}
+.form-control {
+  width: 60%;
 }
